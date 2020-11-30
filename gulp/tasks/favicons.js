@@ -17,7 +17,7 @@ module.exports = function favicon() {
                 coast: false
             }
         }))
-        .pipe(gulp.dest('dist/img/favicon'))
+        .pipe(gulp.dest('dist/img/favicons'))
         .pipe(debug({
             "title": "Favicons"
         }));
