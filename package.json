@@ -9,13 +9,16 @@
     "build:favicon": "gulp favicon",
     "style:lint": "stylelint ./dev/static/styles/**/*.scss --syntax scss",
     "style:fix": "stylelint './dev/static/styles/**/*.scss' --syntax scss --fix",
-    "clean": "gulp clean"
+    "clean": "gulp clean",
+    "bem-m": "bem create $* -l src/blocks/modules"
   },
   "author": "Саламатин Анатолий",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
+    "bem-tools-core": "^0.0.3",
+    "bem-tools-create": "^2.3.0",
     "browser-sync": "^2.26.7",
     "bulma": "^0.9.1",
     "del": "^5.1.0",
