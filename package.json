@@ -8,7 +8,8 @@
     "build": "gulp --prod",
     "build:favicon": "gulp favicon",
     "style:lint": "stylelint ./dev/static/styles/**/*.scss --syntax scss",
-    "style:fix": "stylelint './dev/static/styles/**/*.scss' --syntax scss --fix"
+    "style:fix": "stylelint './dev/static/styles/**/*.scss' --syntax scss --fix",
+    "clean": "gulp clean"
   },
   "author": "Саламатин Анатолий",
   "license": "ISC",

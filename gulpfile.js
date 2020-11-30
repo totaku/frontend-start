@@ -23,3 +23,5 @@ exports.favicon = gulp.series(
     clean,
     favicon
 );
+
+exports.clean = clean;
