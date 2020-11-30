@@ -1,10 +1,9 @@
-import { paths } from "../gulpfile.babel";
-import gulp from "gulp";
-import favicons from "gulp-favicons";
-import debug from "gulp-debug";
+const gulp = require('gulp');
+const favicons = require('gulp-favicons');
+const debug = require('gulp-debug');
 
-gulp.task("favicons", () => {
-    return gulp.src(paths.favicons.src)
+module.exports = function favicon() {
+    return gulp.src('src/img/favicon/*.{jpg,jpeg,png,gif,tiff}')
         .pipe(favicons({
             icons: {
                 appleIcon: true,
@@ -18,8 +17,8 @@ gulp.task("favicons", () => {
                 coast: false
             }
         }))
-        .pipe(gulp.dest(paths.favicons.dist))
+        .pipe(gulp.dest('dist/img/favicon'))
         .pipe(debug({
             "title": "Favicons"
         }));
-});
+};

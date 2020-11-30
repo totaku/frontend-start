@@ -9,12 +9,17 @@ const pug2html = require('./gulp/tasks/pug');
 const spriteSVG = require('./gulp/tasks/spriteSVG');
 const serve = require('./gulp/tasks/serve');
 const spritePNG = require('./gulp/tasks/spritePNG');
-const favIcon = require('./gulp/tasks/favicons');
+const favicon = require('./gulp/tasks/favicons');
 
-const dev = gulp.parallel(pug2html, script, vendors, styles, imageMinify, spriteSVG, spritePNG, fonts);
+const dev = gulp.parallel(pug2html, script, vendors, styles, imageMinify, spriteSVG, spritePNG, fonts, favicon);
 
 exports.default = gulp.series(
   clean,
   dev,
   serve
+);
+
+exports.favicon = gulp.series(
+    clean,
+    favicon
 );
