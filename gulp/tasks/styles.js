@@ -17,7 +17,8 @@ module.exports = function styles() {
     .pipe(gulpif(!argv.prod, sourcemaps.init()))
     .pipe(scss())
     .pipe(autoprefixer({
-      cascade: false
+        cascade: false,
+        grid: true
     }))
     .pipe(gulpif(argv.prod, cleanCSS({
         compatibility: "ie8", level: {

@@ -7,6 +7,7 @@
     "dev": "gulp",
     "build": "gulp --prod",
     "build:favicon": "gulp favicon",
+    "build:smartgrid": "gulp smartgrid",
     "style:lint": "stylelint ./dev/static/styles/**/*.scss --syntax scss",
     "style:fix": "stylelint './dev/static/styles/**/*.scss' --syntax scss --fix",
     "clean": "gulp clean",
