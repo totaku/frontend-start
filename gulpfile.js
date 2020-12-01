@@ -10,8 +10,9 @@ const spriteSVG = require('./gulp/tasks/spriteSVG');
 const serve = require('./gulp/tasks/serve');
 const spritePNG = require('./gulp/tasks/spritePNG');
 const favicon = require('./gulp/tasks/favicons');
+const smartgrid = require('./gulp/tasks/smart-grid');
 
-const dev = gulp.parallel(pug2html, script, vendors, styles, imageMinify, spriteSVG, spritePNG, fonts, favicon);
+const dev = gulp.parallel(pug2html, script, vendors, smartgrid, styles, imageMinify, spriteSVG, spritePNG, fonts, favicon);
 
 exports.default = gulp.series(
   clean,

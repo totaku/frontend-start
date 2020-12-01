@@ -20,7 +20,6 @@
     "bem-tools-core": "^0.0.3",
     "bem-tools-create": "^2.3.0",
     "browser-sync": "^2.26.7",
-    "bulma": "^0.9.1",
     "del": "^5.1.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
@@ -60,6 +59,7 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
+    "smart-grid": "^2.1.2",
     "svg4everybody": "^2.1.9"
   }
 }
