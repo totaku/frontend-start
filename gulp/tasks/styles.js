@@ -9,8 +9,6 @@ const gulpif = require('gulp-if');
 const debug = require('gulp-debug');
 const rename = require('gulp-rename')
 
-// Работаем со стилями
-
 module.exports = function styles() {
     return gulp.src('src/styles/main.scss')
     .pipe(plumber())
