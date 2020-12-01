@@ -13,7 +13,7 @@
     "clean": "gulp clean",
     "bem-m": "bem create $* -l src/blocks/modules"
   },
-  "author": "Саламатин Анатолий",
+  "author": "Totaku",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.8.7",
@@ -21,7 +21,7 @@
     "bem-tools-core": "^0.0.3",
     "bem-tools-create": "^2.3.0",
     "browser-sync": "^2.26.7",
-    "del": "^5.1.0",
+    "del": "^6.0.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-node": "^11.0.0",

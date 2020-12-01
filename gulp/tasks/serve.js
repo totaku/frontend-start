@@ -17,7 +17,7 @@ module.exports = function serve(cb) {
     port: 3000
   });
 
-  gulp.watch('src/img/*/*.{gif,png,jpg,svg,webp}', gulp.series(imageMinify)).on('change', server.reload);
+  gulp.watch('src/img/**/*.{gif,png,jpg,svg,webp}', gulp.series(imageMinify)).on('change', server.reload);
   gulp.watch('dev/static/images/sprite/svg/*.svg', gulp.series(svgSprite)).on('change', server.reload);
   gulp.watch('dev/static/images/sprite/png/*.png', gulp.series(pngSprite)).on('change', server.reload);
   gulp.watch(['src/blocks/**/*.scss', 'src/styles/**/*.scss'], gulp.series(styles)).on('change', server.reload);
